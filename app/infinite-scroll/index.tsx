@@ -52,7 +52,13 @@ interface ListItemProps {
 const ListItem = ({number} : ListItemProps) => {
   
   return (
-    <FadeInImage />
+    <FadeInImage 
+      uri={`https://picsum.photos/id/${number}/500/400`} 
+      style={{
+        height: 400,
+        width: '100%'
+      }}
+    />
     // <Image 
     //   source={{ uri: `https://picsum.photos/id/${number}/500/400` }}
     //   style={{
