@@ -4,15 +4,15 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
-import { useThemeColor } from '@/hooks/useThemeColor';
 import { allRoutes } from '@/constants/Routes';
+import { useThemeColor } from '@/hooks/useThemeColor';
 
-import "../global.css"
-import { ThemeChangerProvider } from '@/presentation/context/ThemeChangerContextType';
+import { ThemeChangerProvider } from '@/presentation/context/ThemeChangerContext';
+import "../global.css";
 
 
 export default function RootLayout() {
